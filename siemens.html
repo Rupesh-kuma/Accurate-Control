@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-
+    <script src="./index.js"></script>
     <title>Accurate</title>
 </head>
 
@@ -32,28 +32,28 @@
 
             <!-- Navigation -->
             <nav class="main-nav">
-              <ul class="menu">
+                <ul class="menu">
 
-                  <li><a href="/">Home</a></li>
+                    <li><a href="/">Home</a></li>
 
-                  <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
 
-                  <li class="dropdown">
-                      <a href="#">Our Products <i class="fa-solid fa-chevron-down"></i></a>
-                      <ul class="submenu">
-                          <li><a href="siemens.html">Siemens</a></li>
-                          <li><a href="#">Omron</a></li>
-                          <li><a href="#">MeanWell</a></li>
-                          <li><a href="#">UL</a></li>
-                          <li><a href="#">Phoenix</a></li>
-                      </ul>
-                  </li>
+                    <li class="dropdown">
+                        <a href="#">Our Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="siemens.html">Siemens</a></li>
+                            <li><a href="#">Omron</a></li>
+                            <li><a href="#">MeanWell</a></li>
+                            <li><a href="#">UL</a></li>
+                            <li><a href="#">Phoenix</a></li>
+                        </ul>
+                    </li>
 
-                  <li><a href="projects.html">Our Projects</a></li>
+                    <li><a href="projects.html">Our Projects</a></li>
 
-                  <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
 
-              </ul>
+                </ul>
             </nav>
 
             <!-- Right Section -->
@@ -62,7 +62,7 @@
                     Get A Quote <span class="arrow">↗</span>
                 </a>
 
-               
+
 
                 <!-- HAMBURGER ICON -->
                 <div class="icon menu-icon" id="menuToggle">
@@ -129,287 +129,162 @@
     </section>
 
     <!-- about section================================= -->
-   <section class="railway-section">
-    <div class="blog-one__shape-1 float-bob-x">
-        <img src="/images/blog-one-shape-1.png" alt="">
+
+    <!-- Main Content -->
+    <section class="Our-product">
+    <div class="container my-4">
+        <div class="row">
+
+            <!-- Left Sidebar -->
+            <div class="col-lg-3 col-md-4 mb-4">
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                        Our Products
+                    </div>
+
+                    <div class="list-group list-group-flush">
+
+                        <!-- PLC -->
+                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#plc-submenu" onclick="setActiveTab(this, 'plc')">
+                            <i class="bi bi-cpu me-2"></i>PLC
+                        </button>
+                        <div class="collapse show submenu" id="plc-submenu">
+                            <button class="submenu-item active" onclick="showProduct('plc', 's7-200', this)">S7-200
+                                Smart</button>
+                            <button class="submenu-item" onclick="showProduct('plc', 's7-1200', this)">S7-1200</button>
+                            <button class="submenu-item" onclick="showProduct('plc', 's7-1500', this)">S7-1500</button>
+                            <button class="submenu-item" onclick="showProduct('plc', 'et200sp', this)">ET200SP</button>
+                        </div>
+
+                        <!-- HMI -->
+                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#hmi-submenu" onclick="setActiveTab(this, 'hmi')">
+                            <i class="bi bi-display me-2"></i>HMI
+                        </button>
+                        <div class="collapse submenu" id="hmi-submenu">
+                            <button class="submenu-item" onclick="showProduct('hmi', 'ktp-basic', this)">KTP
+                                BASIC</button>
+                            <button class="submenu-item" onclick="showProduct('hmi', 'ktp-comfort', this)">KTP
+                                COMFORT</button>
+                            <button class="submenu-item" onclick="showProduct('hmi', 'mtp-unified', this)">MTP
+                                UNIFIED</button>
+                            <button class="submenu-item" onclick="showProduct('hmi', 'unified-basic', this)">Unified
+                                Basic</button>
+                            <button class="submenu-item" onclick="showProduct('hmi', 'key-panels', this)">Key
+                                Panels</button>
+                            <button class="submenu-item" onclick="showProduct('hmi', 'ipc', this)">IPC</button>
+                        </div>
+
+                        <!-- AC Drives -->
+                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#drive-submenu" onclick="setActiveTab(this, 'drive')">
+                            <i class="bi bi-lightning-charge me-2"></i>AC Drives
+                        </button>
+                        <div class="collapse submenu" id="drive-submenu">
+                            <button class="submenu-item" onclick="showProduct('drive', 'v20', this)">V20 AC
+                                DRIVES</button>
+                            <button class="submenu-item" onclick="showProduct('drive', 'g120', this)">G120 AC
+                                DRIVES</button>
+                            <button class="submenu-item" onclick="showProduct('drive', 'g120c', this)">G120C</button>
+                            <button class="submenu-item" onclick="showProduct('drive', 'g120xa', this)">G120XA</button>
+                        </div>
+
+                        <!-- Servo -->
+                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#servo-submenu" onclick="setActiveTab(this, 'servo')">
+                            <i class="bi bi-gear me-2"></i>Servo
+                        </button>
+                        <div class="collapse submenu" id="servo-submenu">
+                            <button class="submenu-item" onclick="showProduct('servo', 'v90', this)">SERVO V90</button>
+                            <button class="submenu-item" onclick="showProduct('servo', 's200', this)">S200</button>
+                            <button class="submenu-item" onclick="showProduct('servo', 's120', this)">SERVO
+                                S120</button>
+                        </div>
+
+                        <!-- SCADA -->
+                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#scada-submenu" onclick="setActiveTab(this, 'scada')">
+                            <i class="bi bi-diagram-3 me-2"></i>SCADA
+                        </button>
+                        <div class="collapse submenu" id="scada-submenu">
+                            <button class="submenu-item" onclick="showProduct('scada', 'wincc-advanced', this)">WinCC
+                                Advanced</button>
+                            <button class="submenu-item"
+                                onclick="showProduct('scada', 'wincc-professional', this)">WinCC Professional</button>
+                        </div>
+
+                        <!-- Programming Softwares -->
+                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#software-submenu" onclick="setActiveTab(this, 'software')">
+                            <i class="bi bi-code-slash me-2"></i>Programming Softwares
+                        </button>
+                        <div class="collapse submenu" id="software-submenu">
+                            <button class="submenu-item"
+                                onclick="showProduct('software', 'step7-microwin', this)">Step-7 Microwin Smart</button>
+                            <button class="submenu-item"
+                                onclick="showProduct('software', 'simatic-manager', this)">Simatic Manager</button>
+                            <button class="submenu-item" onclick="showProduct('software', 'tia-portal', this)">TIA
+                                Portal</button>
+                            <button class="submenu-item"
+                                onclick="showProduct('software', 's7-basic', this)">S7-Basic</button>
+                            <button class="submenu-item"
+                                onclick="showProduct('software', 's7-professional', this)">S7-Professional</button>
+                        </div>
+
+                        <!-- SMPS -->
+                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#smps-submenu" onclick="setActiveTab(this, 'smps')">
+                            <i class="bi bi-battery-charging me-2"></i>SMPS
+                        </button>
+                        <div class="collapse submenu" id="smps-submenu">
+                            <button class="submenu-item" onclick="showProduct('smps', 'sitop', this)">SITOP</button>
+                        </div>
+
+                        <!-- Ethernet Switches -->
+                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#switch-submenu" onclick="setActiveTab(this, 'switch')">
+                            <i class="bi bi-hdd-network me-2"></i>Ethernet Switches
+                        </button>
+                        <div class="collapse submenu" id="switch-submenu">
+                            <button class="submenu-item" onclick="showProduct('switch', '5port', this)">5 Port</button>
+                            <button class="submenu-item" onclick="showProduct('switch', '8port', this)">8 Port</button>
+                            <button class="submenu-item"
+                                onclick="showProduct('switch', 'managed', this)">Managed</button>
+                            <button class="submenu-item"
+                                onclick="showProduct('switch', 'unmanaged', this)">Unmanaged</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content Area -->
+            <div class="col-lg-9 col-md-8">
+                <div id="contentArea">
+                    <!-- Content will be loaded here -->
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="railway-container">
-
-        <!-- LEFT TABS -->
-        <div class="railway-tabs">
-            <h1 class="text-center bg-primary text-white">Our Products</h1>
-            <button class="railway-tab active" data-tab="plc-tab">
-                PLC
-            </button>
-
-            <button class="railway-tab" data-tab="tab2">
-                HMI
-            </button>
-
-            <button class="railway-tab" data-tab="tab3">
-                AC Drives
-            </button>
-
-            <button class="railway-tab" data-tab="tab4">
-                Servo
-            </button>
-
-            <button class="railway-tab" data-tab="tab5">
-               SCADA
-            </button>
-             <button class="railway-tab" data-tab="tab6">
-               Programing Softwares
-            </button>
-             <button class="railway-tab" data-tab="tab7">
-               SMPS
-            </button>
-             <button class="railway-tab" data-tab="tab8">
-               Ethernet Switches
-            </button>
-        </div>
-
-        <!-- RIGHT CONTENT -->
-        <div class="railway-content">
-
-         <div class="railway-tab-content" id="plc-tab">
-
-            <div class="railway-product-wrapper">
-
-                <!-- Title -->
-                <h2 class="railway-product-title">
-                    SIEMENS PLC AUTOMATION SOLUTIONS
-                </h2>
-                <div class="railway-title-underline"></div>
-
-                <!-- Image -->
-                <div class="railway-product-image">
-                    <img src="/images/plc.jpg" alt="Siemens PLC">
-                </div>
-
-                <!-- Description -->
-                <div class="railway-product-description">
-                    <p>
-                        We provide advanced Siemens PLC based automation solutions 
-                        including S7-200 Smart, S7-1200, S7-1500 and ET200SP series. 
-                        These controllers are widely used in industrial process control, 
-                        machine automation, utilities, and infrastructure projects.
-                    </p>
-
-                    <p>
-                        Our PLC systems ensure reliable operation, real-time monitoring, 
-                        precise control logic execution, and seamless integration with 
-                        HMI, SCADA and remote monitoring platforms.
-                    </p>
-                </div>
-
-                <!-- Highlights -->
-                <div class="railway-product-highlights">
-                    <h3>Key Features</h3>
-                    <ul>
-                        <li>S7-200 Smart – Compact PLC for small automation systems</li>
-                        <li>S7-1200 – Modular controller with PROFINET communication</li>
-                        <li>S7-1500 – High-performance PLC for complex processes</li>
-                        <li>ET200SP – Distributed I/O system for scalable automation</li>
-                        <li>Integrated with HMI, SCADA & SQL Data Logging</li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-            <div class="railway-tab-content" id="tab2">
-                <h2>Battery Charger for S&T</h2>
-                <p>
-                    Reliable battery charging solutions designed for long-term
-                    railway communication and signaling systems.
-                </p>
-            </div>
-
-            <div class="railway-tab-content" id="tab3">
-                <h2>SMPS Power Plant 48VDC</h2>
-                <p>
-                    High efficiency SMPS based 48VDC systems for telecom
-                    and railway network applications.
-                </p>
-            </div>
-
-            <div class="railway-tab-content" id="tab4">
-                <h2>Mini IPS – 48V DC</h2>
-                <p>
-                    Compact and intelligent Mini IPS solutions for
-                    modern railway infrastructure.
-                </p>
-            </div>
-
-            <div class="railway-tab-content" id="tab5">
-                <h2>DC DC Converter for OFC Network</h2>
-                <p>
-                    Efficient DC-DC conversion units designed for
-                    Optical Fiber Communication networks.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
 </section>
 
-   
+
 
     <!-- footer============================================ -->
-    <footer class="main-footer text-white">
+    <div id="footer"></div>
 
-  <!-- CTA SECTION -->
-  <div class="footer-cta text-center text-lg-start">
-    <div class="container">
-      <div class="row align-items-center">
-
-        <div class="col-lg-8 mb-4 mb-lg-0">
-          <h2 class="fw-bold">
-            Ready to elevate your business? Let’s discuss your plan!
-          </h2>
-        </div>
-
-        <div class="col-lg-4 text-lg-end">
-          <a href="#" class="btn btn-light px-4 py-2">
-            Request A Quote
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </div> <!-- ✅ footer-cta closed properly -->
-
-
-  <!-- MAIN FOOTER -->
-  <div class="footer-content py-5">
-    <div class="container">
-      <div class="row g-4 forowcont">
-
-        <!-- Column 1 -->
-        <div class="col-lg-4 col-md-6">
-          <h4 class="fw-bold mb-3">Accurate Control</h4>
-          <p>
-            Delivering trusted automation and industrial control
-            solutions for modern industries.
-          </p>
-
-          <div class="social-icons mt-3">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-
-        <!-- Column 2 -->
-        <div class="col-lg-3 col-md-6">
-          <h5 class="fw-bold mb-3">Reach Us</h5>
-          <p><strong>Address:</strong><br>
-            Faridabad, Haryana
-          </p>
-          <p>
-            <strong>Call Us:</strong><br>
-            +91-XXXXXXXXXX
-          </p>
-        </div>
-
-        <!-- Column 3 -->
-        <div class="col-lg-2 col-md-6">
-          <h5 class="fw-bold mb-3">Explore</h5>
-          <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 4 -->
-        <div class="col-lg-3 col-md-6">
-          <h5 class="fw-bold mb-3">Products</h5>
-          <ul class="footer-links">
-            <li><a href="#">Seimens</a></li>
-            <li><a href="#">Omron</a></li>
-            <li><a href="#">Meanwell</a></li>
-            <li><a href="#">UL</a></li>
-            <li><a href="#">Phoenix</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div> <!-- ✅ footer-content closed -->
-
-
-  <!-- COPYRIGHT -->
-  <div class="footer-bottom text-center py-2">
-    © 2026 Accurate Control & Automation. All Rights Reserved.
-  </div>
-
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-    <!-- sidebar menu=============================== -->
     <script>
-
-        const menuToggle = document.getElementById("menuToggle");
-        const sidePanel = document.getElementById("sidePanel");
-        const menuClose = document.getElementById("menuClose");
-        const menuOverlay = document.getElementById("menuOverlay");
-
-        menuToggle.addEventListener("click", () => {
-            sidePanel.classList.add("active");
-            menuOverlay.classList.add("active");
-        });
-
-        menuClose.addEventListener("click", () => {
-            sidePanel.classList.remove("active");
-            menuOverlay.classList.remove("active");
-        });
-
-        menuOverlay.addEventListener("click", () => {
-            sidePanel.classList.remove("active");
-            menuOverlay.classList.remove("active");
-        });
-
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
     </script>
-   
-<script>
-    const tabs = document.querySelectorAll(".railway-tab");
-    const contents = document.querySelectorAll(".railway-tab-content");
 
-    tabs.forEach(tab => {
-        tab.addEventListener("click", () => {
 
-            tabs.forEach(btn => btn.classList.remove("active"));
-            contents.forEach(content => content.classList.remove("active"));
 
-            tab.classList.add("active");
-            document.getElementById(tab.dataset.tab).classList.add("active");
-        });
-    });
-</script>
 
 </body>
 
