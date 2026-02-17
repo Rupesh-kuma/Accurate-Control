@@ -630,4 +630,42 @@ document.addEventListener('DOMContentLoaded', function () {
     renderAllModels('plc');
 });
 
+// side bar menu
 
+function loadPart(id, file) {
+    fetch(file)
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById(id).innerHTML = data;
+      })
+      .then(initSidebar); // important
+  }
+  
+  function initSidebar() {
+  
+    const menuToggle = document.getElementById("menuToggle");
+    const sidePanel = document.getElementById("sidePanel");
+    const menuClose = document.getElementById("menuClose");
+    const menuOverlay = document.getElementById("menuOverlay");
+  
+    if (!menuToggle) return;
+  
+    menuToggle.onclick = () => {
+      sidePanel.classList.add("active");
+      menuOverlay.classList.add("active");
+    };
+  
+    menuClose.onclick = () => {
+      sidePanel.classList.remove("active");
+      menuOverlay.classList.remove("active");
+    };
+  
+    menuOverlay.onclick = () => {
+      sidePanel.classList.remove("active");
+      menuOverlay.classList.remove("active");
+    };
+  }
+  
+  loadPart("header", "./Header.html");
+  loadPart("footer", "./footer.html");
+  
