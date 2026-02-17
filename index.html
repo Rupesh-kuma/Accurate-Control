@@ -21,148 +21,15 @@
 
 <body>
   <!-- Header section================================== -->
-  <!-- top header  -->
-  <!-- navbar header -->
-  <header class="main-header">
-    <div class="main-menu__top">
-      <div class="main-menu__top-inner">
-        <ul class="list-unstyled main-menu__contact-list">
-          <li>
-            <div class="icon">
-              <i class="fa-solid fa-phone-volume"></i>
-            </div>
-            <div class="text">
-              <p><a href="tel:15502505260">+1 (550) 250 5260</a></p>
-            </div>
-          </li>
-          <li>
-            <div class="icon">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="text">
-              <p><a href="mailto:info@Fixpro24.com">info@Fixpro24.com</a>
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="icon">
-              <i class="fa-solid fa-location-arrow"></i>
-            </div>
-            <div class="text">
-              <p>4124 Cimmaron Road, CA 92806</p>
-            </div>
-          </li>
-        </ul>
-        <div class="main-menu__top-right">
-          <div class="main-menu__top-time">
-            <div class="main-menu__top-time-icon">
-              <i class="fa-solid fa-clock-rotate-left"></i>
-            </div>
-            <p class="main-menu__top-text">Mon - Fri: 09:00 - 05:00</p>
-          </div>
-          <div class="main-menu__social">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid header-inner">
+  <div id="Header"></div>
 
-      <!-- Logo -->
-      <div class="logo">
-        <img src="/images/final-logo.png" alt="Logo">
-      </div>
-
-      <!-- Navigation -->
-      <nav class="main-nav">
-        <ul class="menu">
-
-          <li><a href="/">Home</a></li>
-
-          <li><a href="aboutus.html">About Us</a></li>
-
-          <li class="dropdown">
-            <a href="#">Our Products <i class="fa-solid fa-chevron-down"></i></a>
-            <ul class="submenu">
-              <li><a href="siemens.html">Siemens</a></li>
-              <li><a href="#">Omron</a></li>
-              <li><a href="#">MeanWell</a></li>
-              <li><a href="#">UL</a></li>
-              <li><a href="#">Phoenix</a></li>
-            </ul>
-          </li>
-
-          <li><a href="projects.html">Our Projects</a></li>
-
-          <li><a href="contact.html">Contact Us</a></li>
-
-        </ul>
-      </nav>
-
-      <!-- Right Section -->
-      <div class="header-right">
-        <a href="#" class="quote-btn">
-          Get A Quote <span class="arrow">↗</span>
-        </a>
-
-
-
-        <!-- HAMBURGER ICON -->
-        <div class="icon menu-icon" id="menuToggle">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-
-
-        <!-- OVERLAY -->
-        <div class="menu-overlay" id="menuOverlay"></div>
-
-
-        <!-- SIDE PANEL -->
-        <div class="side-panel" id="sidePanel">
-
-          <div class="panel-header">
-            <img src="/images/final-logo.png" alt="Logo">
-            <div class="close-btn" id="menuClose">
-              <i class="fa-solid fa-xmark"></i>
-            </div>
-          </div>
-
-          <p class="panel-text">
-            We bring the future of energy to your doorstep with cutting-edge,
-            efficient & eco-friendly power solutions.
-          </p>
-
-          <a href="#" class="panel-btn">
-            Get in touch now <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-
-          <h4>Social Links</h4>
-
-          <div class="social-icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-pinterest-p"></i>
-            <i class="fab fa-youtube"></i>
-          </div>
-
-          <h4>Subscribe To Newsletter</h4>
-
-          <div class="subscribe-box">
-            <input type="email" placeholder="Email Address*">
-            <button>Subscribe</button>
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-  </header>
+  <script>
+    fetch("Header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("Header").innerHTML = data;
+      });
+  </script>
 
   <!-- hero section=========================================== -->
   <section class="hero">
@@ -793,30 +660,7 @@
 
   </script>
 
-  <!-- sidebar menu=============================== -->
-  <script>
-
-    const menuToggle = document.getElementById("menuToggle");
-    const sidePanel = document.getElementById("sidePanel");
-    const menuClose = document.getElementById("menuClose");
-    const menuOverlay = document.getElementById("menuOverlay");
-
-    menuToggle.addEventListener("click", () => {
-      sidePanel.classList.add("active");
-      menuOverlay.classList.add("active");
-    });
-
-    menuClose.addEventListener("click", () => {
-      sidePanel.classList.remove("active");
-      menuOverlay.classList.remove("active");
-    });
-
-    menuOverlay.addEventListener("click", () => {
-      sidePanel.classList.remove("active");
-      menuOverlay.classList.remove("active");
-    });
-
-  </script>
+  
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".productSwiper", {
