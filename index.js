@@ -633,22 +633,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //   sidebar menu=============================== 
 
-    const menuToggle = document.getElementById("menuToggle");
-    const sidePanel = document.getElementById("sidePanel");
-    const menuClose = document.getElementById("menuClose");
-    const menuOverlay = document.getElementById("menuOverlay");
+ document.addEventListener("DOMContentLoaded", function () {
 
-    menuToggle.addEventListener("click", () => {
-      sidePanel.classList.add("active");
-      menuOverlay.classList.add("active");
-    });
+  const menuToggle = document.getElementById("menuToggle");
+  const sidePanel = document.getElementById("sidePanel");
+  const menuClose = document.getElementById("menuClose");
+  const menuOverlay = document.getElementById("menuOverlay");
 
-    menuClose.addEventListener("click", () => {
-      sidePanel.classList.remove("active");
-      menuOverlay.classList.remove("active");
-    });
+  menuToggle.addEventListener("click", () => {
+    sidePanel.classList.add("active");
+    menuOverlay.classList.add("active");
+  });
 
-    menuOverlay.addEventListener("click", () => {
-      sidePanel.classList.remove("active");
-      menuOverlay.classList.remove("active");
-    });
+  menuClose.addEventListener("click", () => {
+    sidePanel.classList.remove("active");
+    menuOverlay.classList.remove("active");
+  });
+
+  menuOverlay.addEventListener("click", () => {
+    sidePanel.classList.remove("active");
+    menuOverlay.classList.remove("active");
+  });
+
+});
