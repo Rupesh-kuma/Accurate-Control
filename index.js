@@ -632,7 +632,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // side bar menu
 
-<<<<<<< HEAD
 function loadPart(id, file) {
     fetch(file)
       .then(res => res.text())
@@ -670,33 +669,3 @@ function loadPart(id, file) {
   loadPart("header", "./Header.html");
   loadPart("footer", "./footer.html");
   
-=======
-document.addEventListener("DOMContentLoaded", function () {
-
-  const menuToggle = document.getElementById("menuToggle");
-  const sidePanel = document.getElementById("sidePanel");
-  const menuClose = document.getElementById("menuClose");
-  const menuOverlay = document.getElementById("menuOverlay");
-
-  if (!menuToggle || !sidePanel || !menuClose || !menuOverlay) {
-    console.log("Sidebar elements missing");
-    return;
-  }
-
-  menuToggle.onclick = () => {
-    sidePanel.classList.add("active");
-    menuOverlay.classList.add("active");
-  };
-
-  menuClose.onclick = () => {
-    sidePanel.classList.remove("active");
-    menuOverlay.classList.remove("active");
-  };
-
-  menuOverlay.onclick = () => {
-    sidePanel.classList.remove("active");
-    menuOverlay.classList.remove("active");
-  };
-
-});
->>>>>>> 5c6ecefceb61eedde2605cf341232bf1225be0ac
