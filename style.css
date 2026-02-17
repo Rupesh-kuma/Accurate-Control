@@ -273,6 +273,7 @@ body{
     display: block;
     color: #333;
     text-decoration: none;
+    border-radius: 6px;
 }
 
 .submenu li a:hover {
