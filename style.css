@@ -1083,7 +1083,7 @@ body{
 }
 
 .circle-box::after {
-    border-bottom-color: #dee2e9;
+    border-bottom-color: #0d266e;
     transform: rotate(180deg)
 }
 
@@ -1176,7 +1176,7 @@ body{
 
     .text {
         font-size: 12px;
-        padding: 0 10px
+        padding: 0 27px
     }
 }
 /* project page=================== */
