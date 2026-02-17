@@ -23,7 +23,19 @@
 
 <body>
   <!-- Header section================================== -->
+<<<<<<< HEAD
   <div id="header"></div>
+=======
+  <div id="Header"></div>
+
+  <script>
+    fetch("Header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("Header").innerHTML = data;
+      });
+  </script>
+>>>>>>> 5c6ecefceb61eedde2605cf341232bf1225be0ac
 
   <!-- hero section=========================================== -->
   <section class="about-hero">
@@ -390,6 +402,12 @@
   <div id="footer"></div>
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 5c6ecefceb61eedde2605cf341232bf1225be0ac
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".productSwiper", {
