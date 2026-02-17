@@ -630,29 +630,33 @@ document.addEventListener('DOMContentLoaded', function () {
     renderAllModels('plc');
 });
 
+// side bar menu
 
-//   sidebar menu=============================== 
-
- document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
   const menuToggle = document.getElementById("menuToggle");
   const sidePanel = document.getElementById("sidePanel");
   const menuClose = document.getElementById("menuClose");
   const menuOverlay = document.getElementById("menuOverlay");
 
-  menuToggle.addEventListener("click", () => {
+  if (!menuToggle || !sidePanel || !menuClose || !menuOverlay) {
+    console.log("Sidebar elements missing");
+    return;
+  }
+
+  menuToggle.onclick = () => {
     sidePanel.classList.add("active");
     menuOverlay.classList.add("active");
-  });
+  };
 
-  menuClose.addEventListener("click", () => {
+  menuClose.onclick = () => {
     sidePanel.classList.remove("active");
     menuOverlay.classList.remove("active");
-  });
+  };
 
-  menuOverlay.addEventListener("click", () => {
+  menuOverlay.onclick = () => {
     sidePanel.classList.remove("active");
     menuOverlay.classList.remove("active");
-  });
+  };
 
 });
