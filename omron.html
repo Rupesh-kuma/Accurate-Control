@@ -51,118 +51,133 @@
 
                     <div class="list-group list-group-flush">
 
-                        <!-- PLC -->
-                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#plc-submenu" onclick="setActiveTab(this, 'plc')">
-                            <i class="bi bi-cpu me-2"></i>PLC
+                        <!-- Proximity Sensors -->
+                        <button class="list-group-item" data-bs-toggle="collapse" data-bs-target="#main_menu"
+                        onclick="setActiveTab(this,'main_menu')">
+                        Proximity Sensors
                         </button>
-                        <div class="collapse show submenu" id="plc-submenu">
-                            <button class="submenu-item active" onclick="showProduct('plc', 's7-200', this)">S7-200
-                                Smart</button>
-                            <button class="submenu-item" onclick="showProduct('plc', 's7-1200', this)">S7-1200</button>
-                            <button class="submenu-item" onclick="showProduct('plc', 's7-1500', this)">S7-1500</button>
-                            <button class="submenu-item" onclick="showProduct('plc', 'et200sp', this)">ET200SP</button>
+                        <div class="collapse show submenu" id="main_menu">
+                        <button class="submenu-item active" onclick="showProduct('main_menu','menu_drop1',this)">E2B</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu','menu_drop2',this)">E2A</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu','menu_drop3',this)">Inductive</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu','menu_drop4',this)">Capacitive</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu','menu_drop5',this)">Pre Wired</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu','menu_drop6',this)">M12 Connector</button>
                         </div>
-
-                        <!-- HMI -->
-                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#hmi-submenu" onclick="setActiveTab(this, 'hmi')">
-                            <i class="bi bi-display me-2"></i>HMI
+                        
+                        <!-- Photo Sensors -->
+                        <button class="list-group-item" data-bs-toggle="collapse" data-bs-target="#main_menu2"
+                        onclick="setActiveTab(this,'main_menu2')">
+                        Photo Sensors
                         </button>
-                        <div class="collapse submenu" id="hmi-submenu">
-                            <button class="submenu-item" onclick="showProduct('hmi', 'ktp-basic', this)">KTP
-                                BASIC</button>
-                            <button class="submenu-item" onclick="showProduct('hmi', 'ktp-comfort', this)">KTP
-                                COMFORT</button>
-                            <button class="submenu-item" onclick="showProduct('hmi', 'mtp-unified', this)">MTP
-                                UNIFIED</button>
-                            <button class="submenu-item" onclick="showProduct('hmi', 'unified-basic', this)">Unified
-                                Basic</button>
-                            <button class="submenu-item" onclick="showProduct('hmi', 'key-panels', this)">Key
-                                Panels</button>
-                            <button class="submenu-item" onclick="showProduct('hmi', 'ipc', this)">IPC</button>
+                        <div class="collapse submenu" id="main_menu2">
+                        <button class="submenu-item" onclick="showProduct('main_menu2','menu_drop2_1',this)">Diffuse</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu2','menu_drop2_2',this)">Retroreflective</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu2','menu_drop2_3',this)">Through Beam</button>
                         </div>
-
-                        <!-- AC Drives -->
-                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#drive-submenu" onclick="setActiveTab(this, 'drive')">
-                            <i class="bi bi-lightning-charge me-2"></i>AC Drives
+                        
+                        <!-- Relays -->
+                        <button class="list-group-item" data-bs-toggle="collapse" data-bs-target="#main_menu3"
+                        onclick="setActiveTab(this,'main_menu3')">
+                        Relays
                         </button>
-                        <div class="collapse submenu" id="drive-submenu">
-                            <button class="submenu-item" onclick="showProduct('drive', 'v20', this)">V20 AC
-                                DRIVES</button>
-                            <button class="submenu-item" onclick="showProduct('drive', 'g120', this)">G120 AC
-                                DRIVES</button>
-                            <button class="submenu-item" onclick="showProduct('drive', 'g120c', this)">G120C</button>
-                            <button class="submenu-item" onclick="showProduct('drive', 'g120xa', this)">G120XA</button>
+                        <div class="collapse submenu" id="main_menu3">
+                        <button class="submenu-item" onclick="showProduct('main_menu3','menu_drop3_1',this)">MY2N</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu3','menu_drop3_2',this)">MY4N</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu3','menu_drop3_3',this)">LY2N</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu3','menu_drop3_4',this)">LY4N</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu3','menu_drop3_5',this)">G2RV Slim</button>
                         </div>
-
-                        <!-- Servo -->
-                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#servo-submenu" onclick="setActiveTab(this, 'servo')">
-                            <i class="bi bi-gear me-2"></i>Servo
+                        
+                        <!-- Limit Switch -->
+                        <button class="list-group-item" data-bs-toggle="collapse" data-bs-target="#main_menu4"
+                        onclick="setActiveTab(this,'main_menu4')">
+                        Limit Switches
                         </button>
-                        <div class="collapse submenu" id="servo-submenu">
-                            <button class="submenu-item" onclick="showProduct('servo', 'v90', this)">SERVO V90</button>
-                            <button class="submenu-item" onclick="showProduct('servo', 's200', this)">S200</button>
-                            <button class="submenu-item" onclick="showProduct('servo', 's120', this)">SERVO
-                                S120</button>
+                        <div class="collapse submenu" id="main_menu4">
+                        <button class="submenu-item" onclick="showProduct('main_menu4','menu_drop4_1',this)">WLDA2</button>
                         </div>
-
-                        <!-- SCADA -->
-                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#scada-submenu" onclick="setActiveTab(this, 'scada')">
-                            <i class="bi bi-diagram-3 me-2"></i>SCADA
+                        
+                        <!-- Safety Curtains -->
+                        <button class="list-group-item" data-bs-toggle="collapse" data-bs-target="#main_menu5"
+                        onclick="setActiveTab(this,'main_menu5')">
+                        Safety Curtains
                         </button>
-                        <div class="collapse submenu" id="scada-submenu">
-                            <button class="submenu-item" onclick="showProduct('scada', 'wincc-advanced', this)">WinCC
-                                Advanced</button>
-                            <button class="submenu-item"
-                                onclick="showProduct('scada', 'wincc-professional', this)">WinCC Professional</button>
+                        <div class="collapse submenu" id="main_menu5">
+                        <button class="submenu-item" onclick="showProduct('main_menu5','menu_drop5_1',this)">Type 4</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu5','menu_drop5_2',this)">200 – 1200 mm</button>
                         </div>
-
-                        <!-- Programming Softwares -->
-                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#software-submenu" onclick="setActiveTab(this, 'software')">
-                            <i class="bi bi-code-slash me-2"></i>Programming Softwares
+                        
+                        <!-- Timer -->
+                        <button class="list-group-item" data-bs-toggle="collapse" data-bs-target="#main_menu6"
+                        onclick="setActiveTab(this,'main_menu6')">
+                        Timer
                         </button>
-                        <div class="collapse submenu" id="software-submenu">
-                            <button class="submenu-item"
-                                onclick="showProduct('software', 'step7-microwin', this)">Step-7 Microwin Smart</button>
-                            <button class="submenu-item"
-                                onclick="showProduct('software', 'simatic-manager', this)">Simatic Manager</button>
-                            <button class="submenu-item" onclick="showProduct('software', 'tia-portal', this)">TIA
-                                Portal</button>
-                            <button class="submenu-item"
-                                onclick="showProduct('software', 's7-basic', this)">S7-Basic</button>
-                            <button class="submenu-item"
-                                onclick="showProduct('software', 's7-professional', this)">S7-Professional</button>
+                        <div class="collapse submenu" id="main_menu6">
+                        <button class="submenu-item" onclick="showProduct('main_menu6','menu_drop6_1',this)">AT8N</button>
                         </div>
-
+                        
+                        <!-- Counter -->
+                        <button class="list-group-item" data-bs-toggle="collapse" data-bs-target="#main_menu7"
+                        onclick="setActiveTab(this,'main_menu7')">
+                        Counter
+                        </button>
+                        <div class="collapse submenu" id="main_menu7">
+                        <button class="submenu-item" onclick="showProduct('main_menu7','menu_drop7_1',this)">H7EC</button>
+                        </div>
+                        
+                        <!-- Temperature Controller -->
+                        <button class="list-group-item" data-bs-toggle="collapse" data-bs-target="#main_menu8"
+                        onclick="setActiveTab(this,'main_menu8')">
+                        Temperature Controllers
+                        </button>
+                        <div class="collapse submenu" id="main_menu8">
+                        <button class="submenu-item" onclick="showProduct('main_menu8','menu_drop8_1',this)">E5CC</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu8','menu_drop8_2',this)">E5CW</button>
+                        </div>
+                        
                         <!-- SMPS -->
-                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#smps-submenu" onclick="setActiveTab(this, 'smps')">
-                            <i class="bi bi-battery-charging me-2"></i>SMPS
+                        <button class="list-group-item" data-bs-toggle="collapse" data-bs-target="#main_menu9"
+                        onclick="setActiveTab(this,'main_menu9')">
+                        SMPS
                         </button>
-                        <div class="collapse submenu" id="smps-submenu">
-                            <button class="submenu-item" onclick="showProduct('smps', 'sitop', this)">SITOP</button>
+                        <div class="collapse submenu" id="main_menu9">
+                        <button class="submenu-item" onclick="showProduct('main_menu9','menu_drop9_1',this)">S8VS</button>
                         </div>
-
-                        <!-- Ethernet Switches -->
-                        <button class="list-group-item" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#switch-submenu" onclick="setActiveTab(this, 'switch')">
-                            <i class="bi bi-hdd-network me-2"></i>Ethernet Switches
+                        
+                        <!-- Encoder -->
+                        <button class="list-group-item" data-bs-toggle="collapse" data-bs-target="#main_menu10"
+                        onclick="setActiveTab(this,'main_menu10')">
+                        Encoder
                         </button>
-                        <div class="collapse submenu" id="switch-submenu">
-                            <button class="submenu-item" onclick="showProduct('switch', '5port', this)">5 Port</button>
-                            <button class="submenu-item" onclick="showProduct('switch', '8port', this)">8 Port</button>
-                            <button class="submenu-item"
-                                onclick="showProduct('switch', 'managed', this)">Managed</button>
-                            <button class="submenu-item"
-                                onclick="showProduct('switch', 'unmanaged', this)">Unmanaged</button>
+                        <div class="collapse submenu" id="main_menu10">
+                        <button class="submenu-item" onclick="showProduct('main_menu10','menu_drop10_1',this)">E6B2</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu10','menu_drop10_2',this)">E6C2</button>
                         </div>
-
-                    </div>
+                        
+                        <!-- PLC -->
+                        <button class="list-group-item" data-bs-toggle="collapse" data-bs-target="#main_menu11"
+                        onclick="setActiveTab(this,'main_menu11')">
+                        PLC
+                        </button>
+                        <div class="collapse submenu" id="main_menu11">
+                        <button class="submenu-item" onclick="showProduct('main_menu11','menu_drop11_1',this)">CP1E</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu11','menu_drop11_2',this)">CP2E</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu11','menu_drop11_3',this)">CJ1M</button>
+                        <button class="submenu-item" onclick="showProduct('main_menu11','menu_drop11_4',this)">CJ2M</button>
+                        </div>
+                        
+                        <!-- HMI -->
+                        <button class="list-group-item" data-bs-toggle="collapse" data-bs-target="#main_menu12"
+                        onclick="setActiveTab(this,'main_menu12')">
+                        HMI
+                        </button>
+                        <div class="collapse submenu" id="main_menu12">
+                        <button class="submenu-item" onclick="showProduct('main_menu12','menu_drop12_1',this)">NB7</button>
+                        </div>
+                        
+                        </div>
+                        
                 </div>
             </div>
 

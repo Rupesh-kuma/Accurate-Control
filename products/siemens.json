@@ -1,5 +1,5 @@
 {
-    "plc": {
+    "main_menu": {
         "title": "SIEMENS PLC AUTOMATION SOLUTIONS",
         "description": "We provide advanced Siemens PLC-based automation solutions for industrial process control, machine automation, and infrastructure projects. Our PLC portfolio includes the complete SIMATIC S7 family, offering scalable solutions from compact controllers to high-performance systems.",
         "features": [
@@ -13,7 +13,7 @@
             "Fail-safe variants available for safety-critical applications"
         ],
         "models": {
-            "s7-200": {
+            "menu_drop1": {
                 "name": "S7-200 Smart",
                 "description": "Compact micro PLC designed for small-scale automation tasks with basic to medium complexity. Features onboard I/O, Ethernet connectivity, and micro SD card support for program transfer and firmware updates.",
                 "image": "./images/S7-200-Smart.webp",
@@ -29,7 +29,7 @@
                     "Micro SD card slot for backup and transfer"
                 ]
             },
-            "s7-1200": {
+            "menu_drop2": {
                 "name": "S7-1200",
                 "description": "Modular PLC with PROFINET integration, ideal for discrete and continuous control in manufacturing, food & beverage, and process industries.",
                 "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
@@ -44,7 +44,7 @@
                     "Web Server: Built-in for remote diagnostics"
                 ]
             },
-            "s7-1500": {
+            "menu_drop3": {
                 "name": "S7-1500",
                 "description": "High-performance PLC for demanding automation tasks requiring fast processing, extensive I/O, and advanced motion control.",
                 "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=300&fit=crop",
@@ -58,7 +58,7 @@
                     "Redundancy: H-CPU variants available"
                 ]
             },
-            "et200sp": {
+            "menu_drop4": {
                 "name": "ET200SP",
                 "description": "Highly flexible distributed I/O system with IP20 protection for cabinet installation.",
                 "image": "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=400&h=300&fit=crop",
@@ -73,8 +73,8 @@
             }
         }
     },
-    "hmi": {
-        "badge": "SIEMENS HMI SOLUTIONS",
+    "main_menu2": {
+        "title": "SIEMENS HMI SOLUTIONS",
         "description": "Our comprehensive HMI portfolio provides intuitive operator interfaces for machine and plant visualization. From basic touchscreens to advanced industrial PCs.",
         "features": [
             "Wide range of display sizes from 4\" to 22\" touchscreens",
@@ -86,7 +86,7 @@
             "Recipe management for product changeovers"
         ],
         "models": {
-            "ktp-basic": {
+            "menu_drop2_1": {
                 "name": "KTP BASIC Panels",
                 "description": "Entry-level touchscreen panels for cost-effective visualization.",
                 "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&h=300&fit=crop",
@@ -98,7 +98,7 @@
                     "Connectivity: PROFINET, MPI/PROFIBUS"
                 ]
             },
-            "ktp-comfort": {
+            "menu_drop2_2": {
                 "name": "KTP COMFORT Panels",
                 "description": "Advanced widescreen touchscreens with high-resolution displays.",
                 "image": "./images/S7-200-Smart.webp",
@@ -110,7 +110,7 @@
                     "USB: 2× USB 2.0 ports"
                 ]
             },
-            "mtp-unified": {
+            "menu_drop2_3": {
                 "name": "MTP Unified Comfort Panels",
                 "description": "Multi-touch panels with unified engineering.",
                 "image": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&h=300&fit=crop",
@@ -122,7 +122,7 @@
                     "Video: HDMI input for camera integration"
                 ]
             },
-            "unified-basic": {
+            "menu_drop2_4": {
                 "name": "Unified Basic Panels",
                 "description": "Cost-optimized panels with unified engineering.",
                 "image": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=400&h=300&fit=crop",
@@ -133,7 +133,7 @@
                     "Engineering: TIA Portal platform"
                 ]
             },
-            "key-panels": {
+            "menu_drop2_5": {
                 "name": "Key Panels",
                 "description": "Compact operator panels with physical keys.",
                 "image": "https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?w=400&h=300&fit=crop",
@@ -144,7 +144,7 @@
                     "Protection: IP65 front panel"
                 ]
             },
-            "ipc": {
+            "menu_drop2_6": {
                 "name": "Industrial PC (IPC)",
                 "description": "Rugged industrial computers for advanced SCADA.",
                 "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=400&h=300&fit=crop",
@@ -158,8 +158,8 @@
             }
         }
     },
-    "drive": {
-        "badge": "SIEMENS AC DRIVES SOLUTIONS",
+    "main_menu3": {
+        "title": "SIEMENS AC DRIVES SOLUTIONS",
         "description": "Our comprehensive AC drive portfolio offers variable frequency drives for precise motor control in industrial applications.",
         "features": [
             "Energy savings up to 60% through optimized control",
@@ -169,7 +169,7 @@
             "Easy commissioning with BOP-2 panel"
         ],
         "models": {
-            "v20": {
+            "menu_drop3_1": {
                 "name": "SINAMICS V20",
                 "description": "Basic general-purpose inverter for simple speed control.",
                 "image": "https://images.unsplash.com/photo-1581093458791-9d42e3c7e23e?w=400&h=300&fit=crop",
@@ -181,7 +181,7 @@
                     "Overload: 150% for 60 seconds"
                 ]
             },
-            "g120": {
+            "menu_drop3_2": {
                 "name": "SINAMICS G120",
                 "description": "Modular drive platform with maximum flexibility.",
                 "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&h=300&fit=crop",
@@ -192,7 +192,7 @@
                     "Communication: PROFINET, PROFIBUS"
                 ]
             },
-            "g120c": {
+            "menu_drop3_3": {
                 "name": "SINAMICS G120C",
                 "description": "Compact all-in-one frequency converter.",
                 "image": "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=400&h=300&fit=crop",
@@ -203,7 +203,7 @@
                     "Safety: STO as standard"
                 ]
             },
-            "g120xa": {
+            "menu_drop3_4": {
                 "name": "SINAMICS G120XA",
                 "description": "Infrastructure drive for HVAC and water/wastewater.",
                 "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=300&fit=crop",
@@ -216,8 +216,8 @@
             }
         }
     },
-    "servo": {
-        "badge": "SIEMENS SERVO SYSTEMS",
+    "main_menu4": {
+        "title": "SIEMENS SERVO SYSTEMS",
         "description": "High-precision servo drive systems for demanding motion control applications.",
         "features": [
             "Ultra-precise positioning with 20-bit encoder",
@@ -227,7 +227,7 @@
             "PROFINET, EtherCAT connectivity"
         ],
         "models": {
-            "v90": {
+            "menu_drop4_1": {
                 "name": "SINAMICS V90",
                 "description": "Basic servo drive for standard positioning.",
                 "image": "./images/S7-200-Smart.webp",
@@ -238,7 +238,7 @@
                     "Encoder: 20-bit absolute encoder"
                 ]
             },
-            "s200": {
+            "menu_drop4_2": {
                 "name": "SINAMICS S200 Servo",
                 "description": "High-performance servo for demanding applications.",
                 "image": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&h=300&fit=crop",
@@ -249,7 +249,7 @@
                     "Safety: STO, SS1, SS2 integrated"
                 ]
             },
-            "s120": {
+            "menu_drop4_3": {
                 "name": "SINAMICS S120",
                 "description": "Modular multi-axis servo drive system.",
                 "image": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=400&h=300&fit=crop",
@@ -262,8 +262,8 @@
             }
         }
     },
-    "scada": {
-        "badge": "SIEMENS SCADA SOLUTIONS",
+    "main_menu5": {
+        "title":"SIEMENS SCADA SOLUTIONS",
         "description": "Comprehensive SCADA software for industrial process monitoring and control.",
         "features": [
             "Real-time process visualization",
@@ -274,7 +274,7 @@
             "OPC UA connectivity"
         ],
         "models": {
-            "wincc-advanced": {
+            "menu_drop5_1": {
                 "name": "WinCC Advanced",
                 "description": "Panel-based SCADA for machine visualization.",
                 "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&h=300&fit=crop",
@@ -285,7 +285,7 @@
                     "Engineering: TIA Portal"
                 ]
             },
-            "wincc-professional": {
+            "menu_drop5_2": {
                 "name": "WinCC Professional",
                 "description": "PC-based SCADA for plant-wide automation.",
                 "image": "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=400&h=300&fit=crop",
@@ -298,8 +298,8 @@
             }
         }
     },
-    "software": {
-        "badge": "SIEMENS PROGRAMMING SOFTWARE",
+    "main_menu6": {
+        "title": "SIEMENS PROGRAMMING SOFTWARE",
         "description": "Complete suite of engineering tools for SIMATIC automation systems.",
         "features": [
             "Unified engineering environment",
@@ -310,7 +310,7 @@
             "Library management"
         ],
         "models": {
-            "step7-microwin": {
+            "menu_drop6_1": {
                 "name": "Step-7 Microwin Smart",
                 "description": "Programming software for S7-200 Smart PLCs.",
                 "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=300&fit=crop",
@@ -321,7 +321,7 @@
                     "Simulation: Integrated simulator"
                 ]
             },
-            "simatic-manager": {
+            "menu_drop6_2": {
                 "name": "SIMATIC Manager",
                 "description": "Classic programming for S7-300/400 PLCs.",
                 "image": "https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?w=400&h=300&fit=crop",
@@ -332,7 +332,7 @@
                     "Languages: LAD, FBD, STL, Graph, SCL"
                 ]
             },
-            "tia-portal": {
+            "menu_drop6_3": {
                 "name": "TIA Portal",
                 "description": "Unified engineering framework for all SIMATIC devices.",
                 "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=400&h=300&fit=crop",
@@ -343,7 +343,7 @@
                     "Simulation: PLCSIM Advanced"
                 ]
             },
-            "s7-basic": {
+            "menu_drop6_4": {
                 "name": "TIA Portal S7-Basic",
                 "description": "Entry-level version for S7-1200 PLCs.",
                 "image": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=400&h=300&fit=crop",
@@ -354,7 +354,7 @@
                     "Upgradeable to Professional"
                 ]
             },
-            "s7-professional": {
+            "menu_drop6_5": {
                 "name": "TIA Portal S7-Professional",
                 "description": "Full-featured version supporting all devices.",
                 "image": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&h=300&fit=crop",
@@ -367,8 +367,8 @@
             }
         }
     },
-    "smps": {
-        "badge": "SIEMENS POWER SUPPLY SOLUTIONS (SITOP)",
+    "main_menu7": {
+        "title": "SIEMENS POWER SUPPLY SOLUTIONS (SITOP)",
         "description": "Industrial power supply systems providing reliable 24V DC power for automation.",
         "features": [
             "Wide input voltage range",
@@ -379,7 +379,7 @@
             "Ambient temp: -25°C to +70°C"
         ],
         "models": {
-            "sitop": {
+            "menu_drop7_1": {
                 "name": "SITOP Power Supplies",
                 "description": "Comprehensive range from 3A to 40A output current.",
                 "image": "./images/S7-200-Smart.webp",
@@ -393,8 +393,8 @@
             }
         }
     },
-    "switch": {
-        "badge": "SIEMENS ETHERNET SWITCHES",
+    "main_menu8": {
+        "title": "SIEMENS ETHERNET SWITCHES",
         "description": "Industrial Ethernet switches for reliable networking in harsh environments.",
         "features": [
             "Industrial-grade design",
@@ -405,7 +405,7 @@
             "Operating temp: -40°C to +70°C"
         ],
         "models": {
-            "5port": {
+            "menu_drop8_1": {
                 "name": "5 Port Ethernet Switch",
                 "description": "Compact unmanaged switch for small networks.",
                 "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=300&fit=crop",
@@ -417,7 +417,7 @@
                     "Power: 24V DC"
                 ]
             },
-            "8port": {
+            "menu_drop8_2": {
                 "name": "8 Port Ethernet Switch",
                 "description": "Managed/unmanaged options for medium networks.",
                 "image": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=400&h=300&fit=crop",
@@ -429,7 +429,7 @@
                     "Redundancy: MRP support"
                 ]
             },
-            "managed": {
+            "menu_drop8_3": {
                 "name": "Managed Industrial Switches",
                 "description": "Advanced Layer 2/3 functionality.",
                 "image": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&h=300&fit=crop",
@@ -441,7 +441,7 @@
                     "Security: IEEE 802.1X, RADIUS, SSH"
                 ]
             },
-            "unmanaged": {
+            "menu_drop8_4": {
                 "name": "Unmanaged Industrial Switches",
                 "description": "Plug-and-play switches with zero configuration.",
                 "image": "https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?w=400&h=300&fit=crop",
