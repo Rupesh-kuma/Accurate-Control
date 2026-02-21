@@ -1172,10 +1172,7 @@ body{
         gap: 30px
     }
 
-    .circle-box {
-        width: 180px;
-        height: 180px
-    }
+    
 
     .title {
         font-size: 16px
@@ -2326,16 +2323,13 @@ h2{
       width: 100%;
     }
     .hero{
-      height: 67vh;
+      height: 50vh;
     }
   .small-img-wrapper {
   
       width: 100%;
   }
-  .project-section {
-      padding: 0px 5% 30px;
-      background: #0d6efd0d;
-  }
+  
 
   }
 
@@ -2408,12 +2402,16 @@ h2{
   .hero-content    { left: 5%; max-width: 90%; top: 60%; }
 
   /* side panel full width */
-  .side-panel { width: 100%; right: -100%; }
+  .side-panel { width: 95%; right:-100%; padding: 18px; }
   .side-nav {
     left: auto;
     right: auto;
     bottom: 0;
     transform: rotate(90deg);
+    display: none;
+}
+.popup-box {
+  width: 95%;
 }
 .project-text{
 height: auto;
@@ -2421,6 +2419,82 @@ height: auto;
 .project-card {
   margin: 12px 0;
 }
+.subscribe-box {
+  flex-direction: column;
+  gap: 2px;
+}
+.service-content h5{
+  font-size: 16px;
+  margin: 5px 0 !important;
+}
+.aos-animate h5 {
+  font-size: 16px;
+}
+.feature-icon {
+  width: 47px;
+  height: 51px;
+  font-size: 25px;
+  padding: 16px;
+}
+.project-title {
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+.project-number {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background: #e9e6e1;
+  color: #333;
+  padding: 4px 3px;
+  font-size: 12px;
+}
+.footer-cta {
+  padding: 30px 0 29px;
+}
+.about-hero
+ {
+    height: 39vh;
+}
+.maincontainer {
+  gap: 25px;
+  padding: 29px 14px;
+}
+.circle-box
+ {
+        width: 289px;
+        height: 289px;
+    }
+  .founder_body{
+    padding: 15px 7px 9px;
+  }
+  #contact-layout-section{
+    padding: 0;
+  }
+  .contact-info-area h4 {
+    font-size: 16px;
+}
+.contact-form-area h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.project-section {
+  padding: 17px 5% 30px;
+  background: #0d6efd0d;
+}
+.features-box h3 {
+font-size: 16px;
+margin-bottom: 0.5rem;
+}
+.feature-list li::before {
+  width: 22px;
+  height: 22px;
+  font-size: 0.6rem;
+}
+.feature-list li {
+  padding-left: 1.7rem;
+  margin-bottom: 0.6rem;
+  font-size: 14px;
 }
 
 /* ── SMALL MOBILE  (≤ 400px) ─────────────────── */
