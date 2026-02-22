@@ -1315,6 +1315,12 @@ body{
     border: none;
     border-radius: 5px;
 }
+.contact-input-row select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
 
 .contact-save {
     font-size: 13px;
