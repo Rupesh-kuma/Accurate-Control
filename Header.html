@@ -23,7 +23,7 @@
               <i class="fa-solid fa-phone-volume"></i>
             </div>
             <div class="text">
-              <p><a href="tel:15502505260">+1 (550) 250 5260</a></p>
+              <p><a href="tel:+917838673146">+91-7838673146</a></p>
             </div>
           </li>
           <li>
@@ -64,10 +64,10 @@
       <!-- Navigation -->
       <nav class="main-nav navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand logo" href="#"><img src="/images/final-logo.png" alt="Logo"></a>
+          <a class="navbar-brand logo" href="/"><img src="/images/final-logo.png" alt="Logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse " aria-current="page" id="navbarNav">
           
@@ -175,7 +175,7 @@
           <h5 id="quoteModalLabel">Request A Quote</h5>
           <button type="button" class="close-btn" id="closePopup">X</button>
         </div>
-        <form id="quoteForm">
+        <form id="quoteForm"  method="POST" action="./send.php">
           <div class="mb-3">
             <label class="form-label">Full Name *</label>
             <input type="text" name="name" class="form-control" placeholder="Your Name" required />
@@ -202,7 +202,7 @@
             <label class="form-label">Message</label>
             <textarea class="form-control" name="message" rows="3" placeholder="Your requirements..."></textarea>
           </div>
-          <button type="button" class="quote-btn" id="submitBtn">Submit ↗</button>
+          <button type="submit" class="quote-btn" id="submitBtn">Submit ↗</button>
         </form>
       </div>
     </div>
@@ -211,30 +211,8 @@
     
 
   </header>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    (function(){
-      emailjs.init("YOUR_PUBLIC_KEY");
-    })();
-  </script>
 
-<script>
-  document.getElementById("quoteForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-  
-    emailjs.sendForm(
-      "YOUR_SERVICE_ID",
-      "YOUR_TEMPLATE_ID",
-      this
-    ).then(() => {
-        alert("Form submitted successfully!");
-        this.reset();
-    }, (error) => {
-        alert("Error sending message!");
-        console.log(error);
-    });
-  });
-  </script>
+
 
 
 </body>
