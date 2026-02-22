@@ -178,19 +178,19 @@
         <form id="quoteForm">
           <div class="mb-3">
             <label class="form-label">Full Name *</label>
-            <input type="text" class="form-control" placeholder="Your Name" required />
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required />
           </div>
           <div class="mb-3">
             <label class="form-label">Email *</label>
-            <input type="email" class="form-control" placeholder="you@email.com" required />
+            <input type="email" name="email" class="form-control" placeholder="you@email.com" required />
           </div>
           <div class="mb-3">
             <label class="form-label">Phone *</label>
-            <input type="tel" class="form-control" placeholder="+91 98765 43210" required />
+            <input type="tel" name="phone" class="form-control" placeholder="Enter Phone Number" required />
           </div>
           <div class="mb-3">
-            <label class="form-label">Service Required</label>
-            <select class="form-select">
+            <label  class="form-label">Service Required</label>
+            <select name="service" class="form-select">
               <option disabled selected>-- Select --</option>
               <option>Industrial Equipment</option>
               <option>Plant Engineering</option>
@@ -200,7 +200,7 @@
           </div>
           <div class="mb-3">
             <label class="form-label">Message</label>
-            <textarea class="form-control" rows="3" placeholder="Your requirements..."></textarea>
+            <textarea class="form-control" name="message" rows="3" placeholder="Your requirements..."></textarea>
           </div>
           <button type="button" class="quote-btn" id="submitBtn">Submit ↗</button>
         </form>
@@ -208,30 +208,34 @@
     </div>
 
 
-    <div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-
-          <div class="modal-header" style="background:#1a3ac5; color:#fff; border:none;">
-            <h5 class="modal-title" id="quoteModalLabel">Request A Quote</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-              style="filter:invert(1);"></button>
-          </div>
-
-          <div class="modal-body">
-
-          </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
+    
 
   </header>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("YOUR_PUBLIC_KEY");
+    })();
+  </script>
+
+<script>
+  document.getElementById("quoteForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+  
+    emailjs.sendForm(
+      "YOUR_SERVICE_ID",
+      "YOUR_TEMPLATE_ID",
+      this
+    ).then(() => {
+        alert("Form submitted successfully!");
+        this.reset();
+    }, (error) => {
+        alert("Error sending message!");
+        console.log(error);
+    });
+  });
+  </script>
+
 
 </body>
 

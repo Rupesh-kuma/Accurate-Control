@@ -277,9 +277,7 @@ body{
     border-radius: 6px;
 }
 
-.submenu li a:hover {
-    background: #f3f3f3;
-}
+
 
 /* Show dropdown on hover */
 .dropdown:hover .submenu {
@@ -949,6 +947,10 @@ body{
   padding:20px 0;
 }
 /* footer================================================= */
+.footer_cal{
+  color: #fff;
+  text-decoration: none;
+}
 .main-footer{
   position: relative;
   background: 
@@ -961,6 +963,11 @@ body{
 .footer-content,
 .footer-bottom{
   background: transparent;
+}
+.footer-bottom a{
+  color: #fff;
+  text-decoration: none;
+
 }
 .footer-bottom img{
   width: 70px;
@@ -1421,6 +1428,11 @@ body{
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     position: sticky;
     top: 20px;
+}
+.dropdown-item:active{
+  color: unset !important;
+    text-decoration: none;
+    background-color: unset !important;
 }
 
 .sidebar-header {

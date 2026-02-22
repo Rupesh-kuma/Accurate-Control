@@ -261,6 +261,11 @@ popup.onclick = (e) => {
     popup.style.display = "none";
   }
 }
+
+
+
+// form setup
+
   }
   
   loadPart("header", "./Header.html");
